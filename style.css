@@ -1,0 +1,89 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+} 
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    font-size: 2vw;
+    flex: 1;
+    transition:font-size .7s linear,background .7s linear, flex .7s cubic-bezier(0.61,-0.19,0.7,-0.11);
+}
+.text{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kaisei HarunoUmi', serif;
+    color: bisque;
+}
+.item>:first-child{
+    transform: translateY(-100%);
+}
+.item>:last-child{
+    transform: translateY(100%);
+}
+.item.show>:first-child{
+    transform: translateY(0);
+}
+.item.show>:last-child{
+    transform: translateY(0);
+}
+.item.open{
+    flex: 2;
+    font-size: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+.item1{
+    background: url(./1.jpg) no-repeat;
+    background-size:200% 100% ;
+}
+
+.item1.itemplus{
+    background-size:100% 100% ;
+}
+.item2{
+    background: url(./2.jpg) no-repeat;
+    background-size:200% 100% ;
+}
+.item2.itemplus{
+    background-size:100% 100% ;
+}
+.item3{
+    background: url(./3.jpg) no-repeat;
+    background-size:200% 100% ;
+}
+.item3.itemplus{
+    background-size:100% 100% ;
+}
+.item4{
+    background: url(./51372.jpg) no-repeat;
+    background-size:200% 100% ;
+}
+.item4.itemplus{
+    background-size:100% 100% ;
+}
+.item5{
+    background: url(./51390.jpg) no-repeat;
+    background-size:200% 100% ;
+}
+.item5.itemplus{
+    background-size:100% 100% ;
+}
